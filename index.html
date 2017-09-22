@@ -3,12 +3,58 @@
   <head>
     <meta charset="utf-8">
     <title>Plus or Less</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.js"></script>
-    <script src= "script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
   </head>
   <body>
 
+      <button id="playbtn">>>> Start Game <<<</button>
 
 
+    <div class="deckOfCards">
+
+    <div class="card" id="step0">
+      <span class="rank">10</span>
+      <span class="suit">Hearts</span>
+    </div>
+
+    <div class="card" id="step1">
+      <span class="rank">10</span>
+      <span class="suit">Hearts</span>
+    </div>
+
+    <div class="card" id="step2">
+      <span class="rank">10</span>
+      <span class="suit">Hearts</span>
+    </div>
+
+    <div class="card" id="step3">
+      <span class="rank">10</span>
+      <span class="suit">Hearts</span>
+    </div>
+
+    <div class="card" id="step4">
+      <span class="rank">10</span>
+      <span class="suit">Hearts</span>
+    </div>
+
+  </div>
+
+  <div id="results">
+    <div class ="result" id="drink"><img src="images/giphy.gif"></div>
+    <div class ="result" id="endTurn"><img src="images/job.gif" alt=""></div>
+    <div class ="result" id="bottoms up"></div>
+
+  </div>
+
+  <button id="plusBtn" class="btn"> + </button>
+  <button id="equalBtn" class="btn"> = </button>
+  <button id="lessBtn" class="btn"> - </button>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src= "Game.js"></script>
+   <script src= "main.js"></script>
   </body>
 </html>
