@@ -104,6 +104,7 @@ function displayTurnMessage(result) {
       $("#drink").hide();
       $(".btn").show();
     }, 2000);
+    displayPlayer();
   }
 
   console.log(game);
@@ -155,5 +156,15 @@ function displayPlayer() {
     $(".score1 p").css("font-size", "40px");
     $(".score1 p").css("color", "tomato");
     $(".score1 p").css("font-weight", "bold");
+    $(".score2 p").css("font-size", "30px");
+    $(".score2 p").css("color", "black");
+    $(".score2 p").css("font-weight", "normal");
+  } else {
+    $(".score2 p").css("font-size", "40px");
+    $(".score2 p").css("color", "tomato");
+    $(".score2 p").css("font-weight", "bold");
+    $(".score1 p").css("font-size", "30px");
+    $(".score1 p").css("color", "black");
+    $(".score1 p").css("font-weight", "normal");
   }
 }
