@@ -103,7 +103,7 @@ function displayTurnMessage(result) {
       $("#remains").show();
       $("#drink").hide();
       $(".btn").show();
-    }, 1000);
+    }, 2000);
   }
 
   console.log(game);
@@ -115,7 +115,7 @@ function displayTurnMessage(result) {
       $("#endTurn").hide();
       $(".btn").show();
       $(".card").show();
-    }, 1000);
+    }, 2000);
   }
 
   if (game.gameEnded() === false) {
