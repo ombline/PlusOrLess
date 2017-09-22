@@ -111,9 +111,9 @@ Game.prototype.play = function(choice) {
 // Change player after step 5 is validated//
 Game.prototype.gameEnded = function() {
   if (this.step === 5) {
+    this.step = 0;
     this.currentPlayer = this.currentPlayer === 1 ? 2 : 1;
     return "win";
   }
-  if (this.deck.cards.length === 0) return "No more cards";
-  return false;
+  if (this.deck.cards.length === 0) return false;
 };

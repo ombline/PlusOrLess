@@ -2,14 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Plus or Less</title>
+    <title>Higher or Lower</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
   </head>
   <body>
 
+    <div id="top">
+
+      <div class="scores score1">
+        <p> Player n°1 : <span> 0 </span></p>
+      </div>
+
       <button id="playbtn">>>> Start Game <<<</button>
 
+
+    <div class="scores score2">
+      <p> Player n°2 : <span> 0 </span></p>
+    </div>
+
+    </div>
 
     <div class="deckOfCards">
 
@@ -47,9 +59,15 @@
 
   </div>
 
+  <div id="final">
+  </div>
+  <img id='winIMG' src="https://media.giphy.com/media/DKnMqdm9i980E/giphy.gif">
+
   <button id="plusBtn" class="btn"> + </button>
   <button id="equalBtn" class="btn"> = </button>
   <button id="lessBtn" class="btn"> - </button>
+
+  <p id="remains"></p>
 
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.16.4/lodash.js"></script>
